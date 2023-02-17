@@ -4,7 +4,7 @@
 
 The image below is the architecture of the micro blogging app
 
-![]()
+![Architecture Diagram](assets/arch.png)
 
 - To view the chart please check the following link
 (https://lucid.app/lucidchart/34d0fe0e-7bda-4fe2-a832-8982f857f6b4/edit?viewport_loc=-1141%2C-105%2C3405%2C1584%2C0_0&invitationId=inv_d5b19804-a73b-4180-8436-1096872e7dc9)
@@ -183,7 +183,9 @@ tasks:
       cd $THEIA_WORKSPACE_ROOT
 ```
 
-![]()
+![Install AWS CLI on Gitpod](assets/Gitpod-awscli.png)
+
+![Install AWS CLI on Windows](assets/awscli-on-windowscmd.png)
 
 
 We'll also run these commands indivually to perform the install manually
@@ -230,7 +232,7 @@ You should see something like this:
 }
 ```
 
-![]()
+![AWS User details](assets/aws-sts.png)
 
 ## Create an AWS Budget
 
@@ -309,7 +311,7 @@ aws budgets create-budget \
     --notifications-with-subscribers file://aws/json/budget/budget-notifications-with-subscribers.json
 ```
 
-![]()
+![AWS Budget](assets/budget.png)
 
 You can create an environment variable of your `ACCOUNTID` and pass it to the command
 
@@ -395,4 +397,4 @@ Create an alarm configuration as a JSON file
 ```sh
 aws cloudwatch put-metric-alarm --cli-input-json file://aws/json/alarm_config.json
 ```
-![]()
+![AWS Billing](assets/billing-alaram.png)
